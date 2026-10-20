@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+        <nav>
+            <strong>Navigation:</strong>
+            <a href="index.html">Home</a> | 
+            <a href="registration.html">Registration Form</a> | 
+            <a href="students.html">Student Database</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <!-- Personal Information Details -->
+            <p>
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter full name">
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="1234567890">
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+
+            <!-- Gender Radio Options -->
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label href="#male" for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="Female">
+                <label href="#female" for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="Other">
+                <label href="#other" for="other">Other</label>
+            </fieldset>
+
+            <!-- Course Selection -->
+            <p>
+                <label for="courseSelect">Select Course:</label><br>
+                <select id="courseSelect" name="courseSelect" required>
+                    <option value="">-- Choose a Course --</option>
+                    <option value="Manual Testing">Manual Testing</option>
+                    <option value="SQL">SQL</option>
+                    <option value="Selenium">Selenium</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="Playwright">Playwright</option>
+                </select>
+            </p>
+
+            <!-- Technical Skills Checkboxes -->
+            <fieldset>
+                <legend>Acquired Skills</legend>
+                <input type="checkbox" id="skillHtml" name="skills" value="HTML">
+                <label for="skillHtml">HTML</label><br>
+                
+                <input type="checkbox" id="skillSql" name="skills" value="SQL">
+                <label href="#skillSql" for="skillSql">SQL</label><br>
+                
+                <input type="checkbox" id="skillJava" name="skills" value="Java">
+                <label for="skillJava">Java</label><br>
+                
+                <input type="checkbox" id="skillPython" name="skills" value="Python">
+                <label for="skillPython">Python</label><br>
+                
+                <input type="checkbox" id="skillTesting" name="skills" value="Testing">
+                <label for="skillTesting">Testing</label>
+            </fieldset>
+
+            <!-- Address Layout -->
+            <p>
+                <label for="address">Mailing Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="40" placeholder="Street, City, State, ZIP..."></textarea>
+            </p>
+
+            <!-- File Upload Input -->
+            <p>
+                <label for="studentFile">Upload Student Identification/Documents:</label><br>
+                <input type="file" id="studentFile" name="studentFile">
+            </p>
+
+            <!-- Submit and Reset Elements -->
+            <p>
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Reset Form</button>
+            </p>
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Student Registration Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
